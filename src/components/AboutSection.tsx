@@ -53,7 +53,7 @@ const AboutSection = () => {
             <img
               src={showroom}
               alt="Elizade showroom"
-              className="w-full h-[500px] object-cover rounded-sm"
+              className="w-full h-auto object-contain rounded-sm"
             />
             <div className="absolute -bottom-6 -left-6 bg-primary text-primary-foreground px-8 py-6 rounded-sm">
               <p className="text-3xl font-display">Est. 1971</p>
