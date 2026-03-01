@@ -56,7 +56,7 @@ const LocationsSection = () => {
             <img
               src={elizadeBuilding}
               alt="Elizade Nigeria headquarters"
-              className="w-full h-[500px] object-cover rounded-sm"
+              className="w-full h-auto object-contain rounded-sm"
             />
           </motion.div>
         </div>
