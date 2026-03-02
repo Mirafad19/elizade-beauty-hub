@@ -19,7 +19,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md">
       <div className="container mx-auto flex items-center justify-between h-20 px-4 lg:px-8">
         <a href="#home" className="flex-shrink-0">
-          <img src={logo} alt="Elizade Toyota" className="h-14 md:h-16" />
+          <img src={logo} alt="Elizade Toyota" className="h-10 md:h-12 w-auto object-contain" />
         </a>
 
         {/* Desktop */}
