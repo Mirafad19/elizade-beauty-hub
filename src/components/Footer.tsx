@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container mx-auto px-6 lg:px-12">
         <div className="grid md:grid-cols-4 gap-8 mb-10">
           <div>
-            <img src={logo} alt="Elizade Toyota" className="h-10 w-auto object-contain mb-4 brightness-200" />
+            <img src={logo} alt="Elizade Toyota" className="h-12 w-auto object-contain mb-4" />
             <p className="text-sm text-surface-dark-foreground/50 leading-relaxed">
               Nigeria's leading Toyota dealer since 1971. Driven by excellence, powered by trust.
             </p>
