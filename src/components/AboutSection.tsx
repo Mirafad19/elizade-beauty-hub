@@ -1,5 +1,28 @@
-import { motion } from "framer-motion";
+import { motion, useInView, useMotionValue, useTransform, animate } from "framer-motion";
+import { useEffect, useRef } from "react";
 import showroom from "@/assets/about-showroom.jpg";
+
+function CountUp({ target, suffix = "", prefix = "" }: { target: number; suffix?: string; prefix?: string }) {
+  const ref = useRef<HTMLParagraphElement>(null);
+  const isInView = useInView(ref, { once: true, margin: "-50px" });
+  const count = useMotionValue(0);
+  const rounded = useTransform(count, (v) => `${prefix}${Math.round(v)}${suffix}`);
+
+  useEffect(() => {
+    if (isInView) {
+      animate(count, target, { duration: 2, ease: "easeOut" });
+    }
+  }, [isInView, target, count]);
+
+  useEffect(() => {
+    const unsubscribe = rounded.on("change", (v) => {
+      if (ref.current) ref.current.textContent = v;
+    });
+    return unsubscribe;
+  }, [rounded]);
+
+  return <p ref={ref} className="text-4xl font-display text-primary">0</p>;
+}
 
 const AboutSection = () => {
   return (
