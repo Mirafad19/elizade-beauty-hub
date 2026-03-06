@@ -5,6 +5,7 @@ import AboutSection from "@/components/AboutSection";
 import VehiclesSection from "@/components/VehiclesSection";
 import ServicesSection from "@/components/ServicesSection";
 import LocationsSection from "@/components/LocationsSection";
+import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
