@@ -50,17 +50,17 @@ const AboutSection = () => {
               we've grown into the most trusted name in Nigerian automotive. In 1996, we partnered to establish Toyota Nigeria Limited (TNL), 
               the sole importer of Toyota vehicles in the country.
             </p>
-            <div className="flex gap-12">
+             <div className="flex gap-12">
               <div>
-                <p className="text-4xl font-display text-primary">50+</p>
+                <CountUp target={50} suffix="+" />
                 <p className="text-sm text-muted-foreground">Years of Excellence</p>
               </div>
               <div>
-                <p className="text-4xl font-display text-primary">10+</p>
+                <CountUp target={10} suffix="+" />
                 <p className="text-sm text-muted-foreground">Branches Nationwide</p>
               </div>
               <div>
-                <p className="text-4xl font-display text-primary">#1</p>
+                <CountUp target={1} prefix="#" />
                 <p className="text-sm text-muted-foreground">Toyota Dealer</p>
               </div>
             </div>
