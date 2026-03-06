@@ -1,5 +1,28 @@
-import { motion } from "framer-motion";
+import { motion, useInView, useMotionValue, useTransform, animate } from "framer-motion";
+import { useEffect, useRef } from "react";
 import showroom from "@/assets/about-showroom.jpg";
+
+function CountUp({ target, suffix = "", prefix = "" }: { target: number; suffix?: string; prefix?: string }) {
+  const ref = useRef<HTMLParagraphElement>(null);
+  const isInView = useInView(ref, { once: true, margin: "-50px" });
+  const count = useMotionValue(0);
+  const rounded = useTransform(count, (v) => `${prefix}${Math.round(v)}${suffix}`);
+
+  useEffect(() => {
+    if (isInView) {
+      animate(count, target, { duration: 2, ease: "easeOut" });
+    }
+  }, [isInView, target, count]);
+
+  useEffect(() => {
+    const unsubscribe = rounded.on("change", (v) => {
+      if (ref.current) ref.current.textContent = v;
+    });
+    return unsubscribe;
+  }, [rounded]);
+
+  return <p ref={ref} className="text-4xl font-display text-primary">0</p>;
+}
 
 const AboutSection = () => {
   return (
@@ -27,17 +50,17 @@ const AboutSection = () => {
               we've grown into the most trusted name in Nigerian automotive. In 1996, we partnered to establish Toyota Nigeria Limited (TNL), 
               the sole importer of Toyota vehicles in the country.
             </p>
-            <div className="flex gap-12">
+             <div className="flex gap-12">
               <div>
-                <p className="text-4xl font-display text-primary">50+</p>
+                <CountUp target={50} suffix="+" />
                 <p className="text-sm text-muted-foreground">Years of Excellence</p>
               </div>
               <div>
-                <p className="text-4xl font-display text-primary">10+</p>
+                <CountUp target={10} suffix="+" />
                 <p className="text-sm text-muted-foreground">Branches Nationwide</p>
               </div>
               <div>
-                <p className="text-4xl font-display text-primary">#1</p>
+                <CountUp target={1} prefix="#" />
                 <p className="text-sm text-muted-foreground">Toyota Dealer</p>
               </div>
             </div>
