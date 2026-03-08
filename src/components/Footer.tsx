@@ -18,15 +18,21 @@ const Footer = () => {
               <a href="#vehicles" className="text-sm text-surface-dark-foreground/50 hover:text-primary transition-colors">Vehicles</a>
               <a href="#services" className="text-sm text-surface-dark-foreground/50 hover:text-primary transition-colors">Services</a>
               <a href="#locations" className="text-sm text-surface-dark-foreground/50 hover:text-primary transition-colors">Locations</a>
+              <a href="#contact" className="text-sm text-surface-dark-foreground/50 hover:text-primary transition-colors">Contact</a>
+              <a href="#faq" className="text-sm text-surface-dark-foreground/50 hover:text-primary transition-colors">FAQ</a>
             </div>
           </div>
           <div>
             <h4 className="font-semibold text-surface-dark-foreground mb-4 text-sm uppercase tracking-wider">Vehicles</h4>
             <div className="flex flex-col gap-2">
-              <span className="text-sm text-surface-dark-foreground/50">Land Cruiser</span>
+              <span className="text-sm text-surface-dark-foreground/50">Land Cruiser 300</span>
               <span className="text-sm text-surface-dark-foreground/50">Hilux</span>
               <span className="text-sm text-surface-dark-foreground/50">Corolla</span>
               <span className="text-sm text-surface-dark-foreground/50">Prado</span>
+              <span className="text-sm text-surface-dark-foreground/50">RAV4</span>
+              <span className="text-sm text-surface-dark-foreground/50">Camry</span>
+              <span className="text-sm text-surface-dark-foreground/50">Coaster</span>
+              <span className="text-sm text-surface-dark-foreground/50">JAC T9</span>
             </div>
           </div>
           <div>
