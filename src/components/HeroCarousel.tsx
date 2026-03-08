@@ -38,7 +38,7 @@ const HeroCarousel = () => {
   }, [next]);
 
   return (
-    <section id="home" className="relative h-screen w-full overflow-hidden">
+    <section id="home" className="relative h-[calc(100vh-48px)] w-full overflow-hidden">
       <AnimatePresence mode="wait">
         <motion.div
           key={current}
