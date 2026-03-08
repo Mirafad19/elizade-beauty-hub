@@ -9,33 +9,33 @@ import heroCommercial from "@/assets/hero-commercial.jpg";
 
 const categories = [
   {
-    name: "Sedans & Saloons",
-    models: "Yaris • Rush • Corolla • Avensis • Camry",
-    image: heroCorolla,
-  },
-  {
-    name: "SUVs & 4x4",
-    models: "RAV4 • Fortuner • Prado • Land Cruiser",
+    name: "SUVs",
+    models: "RAV4 • Rush • Fortuner • Prado • Land Cruiser 300",
     image: heroLandCruiser,
   },
   {
-    name: "Pickups & Trucks",
-    models: "Hilux • LC 70 • Dyna",
+    name: "Sedans",
+    models: "Corolla • Camry • Yaris • Avensis",
+    image: heroCorolla,
+  },
+  {
+    name: "Pickup & Trucks",
+    models: "Hilux • Land Cruiser 70 • Dyna",
     image: heroHilux,
   },
   {
-    name: "Buses & Coasters",
-    models: "Coaster • HiAce Bus",
+    name: "Buses",
+    models: "Coaster • HiAce Bus • Rumion",
     image: heroCoaster,
   },
   {
-    name: "JAC Vehicles",
+    name: "JAC Motors",
     models: "JAC T9 Pickup • JS8 Pro SUV",
     image: heroJac,
   },
   {
-    name: "Commercial Vehicles",
-    models: "HiAce Van • Dyna Truck",
+    name: "Commercial",
+    models: "HiAce Van • Dyna Truck • Starlet",
     image: heroCommercial,
   },
 ];
