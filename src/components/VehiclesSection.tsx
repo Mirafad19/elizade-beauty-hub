@@ -3,6 +3,9 @@ import { ArrowRight } from "lucide-react";
 import heroLandCruiser from "@/assets/hero-landcruiser.jpg";
 import heroHilux from "@/assets/hero-hilux.jpg";
 import heroCorolla from "@/assets/hero-corolla.jpg";
+import heroCoaster from "@/assets/hero-coaster.jpg";
+import heroJac from "@/assets/hero-jac.jpg";
+import heroCommercial from "@/assets/hero-commercial.jpg";
 
 const categories = [
   {
@@ -19,6 +22,21 @@ const categories = [
     name: "Pickups & Trucks",
     models: "Hilux • LC 70 • Dyna",
     image: heroHilux,
+  },
+  {
+    name: "Buses & Coasters",
+    models: "Coaster • HiAce Bus",
+    image: heroCoaster,
+  },
+  {
+    name: "JAC Vehicles",
+    models: "JAC T9 Pickup • JS8 Pro SUV",
+    image: heroJac,
+  },
+  {
+    name: "Commercial Vehicles",
+    models: "HiAce Van • Dyna Truck",
+    image: heroCommercial,
   },
 ];
 
